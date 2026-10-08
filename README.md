@@ -17,10 +17,15 @@ A modern, fast Python development environment configured with Astral's [`uv`](ht
 
 ## 🛠️ Common Commands
 
-### 1. Running the Project & Scripts
-Run the package entrypoint directly:
+### 1. Running the Project & Modules
+Run the project CLI entrypoint:
 ```powershell
 uv run py-dev
+```
+
+Run as a Python module:
+```powershell
+uv run python -m py_dev
 ```
 
 Run an arbitrary script or Python inline:

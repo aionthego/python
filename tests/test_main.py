@@ -1,7 +1,12 @@
-from py_dev import main
+from py_dev import hello, main
+
+
+def test_hello():
+    assert hello() == "Hello, World!"
+    assert hello("Antigravity") == "Hello, Antigravity!"
 
 
 def test_main(capsys):
     main()
     captured = capsys.readouterr()
-    assert "Hello from py-dev!" in captured.out
+    assert "Hello, World!" in captured.out
